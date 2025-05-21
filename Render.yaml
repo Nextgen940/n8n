@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    repo: https://github.com/YOUR_USERNAME/n8n
+    branch: master
+    plan: free
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: Asia/Kolkata
+      - key: WEBHOOK_URL
+        value: https://your-subdomain.onrender.com/
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 5678
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: Nextgen940
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: jjindal098
