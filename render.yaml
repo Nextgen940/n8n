@@ -3,7 +3,7 @@ services:
     name: n8n
     env: docker
     repo: https://github.com/YOUR_USERNAME/n8n
-    branch: master
+    branch: main
     plan: free
     envVars:
       - key: GENERIC_TIMEZONE
